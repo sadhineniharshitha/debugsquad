@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors with Border & Padding</title>
+    <style>
+        /*  Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /*  Type Selector */
+        h1 {
+            color: darkblue;
+            text-align: center;
+            border: 2px solid navy;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            border: 1px solid #999;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /*  Class Selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            border: 2px dashed orange;
+            padding: 15px;
+        }
+
+        /* ID Selector */
+        #special {
+            color: red;
+            font-size: 20px;
+            border: 2px dotted crimson;
+            padding: 12px;
+        }
+
+        /* Grouping Selector */
+        h2,
+        h3 {
+            color: teal;
+            border: 1px solid teal;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        /*  Descendant Selector */
+        div p {
+            border: 2px double #ccc;
+            padding: 10px;
+            background-color: #9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors with Borders & Padding</h1>
+
+    <h2>Subheading Level 2</h2>
+    <h3>Subheading Level 3</h3>
+
+    <p>This is a regular paragraph.</p>
+
+    <p class="highlight">This paragraph uses a class selector with dashed border.</p>
+
+    <p id="special">This paragraph uses an ID selector with dotted border.</p>
+
+    <div>
+        <p>This paragraph is inside a div and styled using a descendant selector.</p>
+        <div>
+            <p>This paragraph is inside a div and styled using a descendant selector.</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
